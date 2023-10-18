@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imageView_Sach"
+        android:layout_width="110sp"
+        android:layout_height="90sp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_launcher_foreground"
+        tools:ignore="VectorDrawableCompat" />
+
+    <TextView
+        android:id="@+id/txt_tenSach"
+        android:layout_width="201dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="5dp"
+        android:text="Ten sach"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@+id/btn_DatMua"
+        app:layout_constraintStart_toEndOf="@+id/imageView_Sach"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txt_dongia"
+        android:layout_width="160dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="8dp"
+        android:text="Don gia"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/imageView_Sach"
+        app:layout_constraintTop_toBottomOf="@+id/txt_tenSach" />
+
+    <Button
+        android:id="@+id/btn_DatMua"
+        android:layout_width="69dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="26dp"
+        android:layout_marginEnd="10dp"
+        android:text="Đặt mua"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
